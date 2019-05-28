@@ -1,0 +1,20 @@
+.box{
+	width: 500px;
+	height: 100px;
+	margin: 0 auto;
+}
+p{
+	margin: 0 auto;
+	font-size: 20px;
+	font-weight: 700;
+
+	text-align: center;
+}
+ #shangpin{
+	width:90%;
+	text-align: center;
+	margin: 30px auto;
+}
+#shangpin td{
+	height: 30px;
+}

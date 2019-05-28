@@ -1,0 +1,15 @@
+*{
+	padding: 0;
+	margin:0 ;
+}
+#box{
+	width: 100%;
+	height: auto;
+	
+}
+#box #tb{
+	margin: 100px auto;
+}
+#tb td{
+	height: 100%;
+}

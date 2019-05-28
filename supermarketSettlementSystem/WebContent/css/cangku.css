@@ -1,0 +1,77 @@
+*{
+	padding:0;
+	margin: 0;
+}
+#box{
+	width: 100%;
+	height: auto;
+}
+#left{
+	width: 30%;
+	height: 100%;
+	
+	float: left;
+	border: 2px solid #34495E;
+}
+#left .food{
+	width: 100%;
+	height: 200px;
+	background-color: red;
+}
+#left .food .top{
+	width: 100%;
+	height: 40px;
+	background-color: brown;
+}
+#left .food .top span{
+	text-align: center;
+	line-height: 40px;
+	font-size: 25px;
+	color: white;
+}
+#left .food .center{
+	width: 100%;
+	height: 160px;
+	background-color:white;
+}
+#left .food .center ul li{
+	display: block;
+	width: 30%;
+	height: 40px;
+	margin-right: 5px;
+	float: left;
+	background-color: #A9A9A9;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: black;
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#content{
+	width: 65%;
+	height: 100%;
+	
+	float: right;
+	
+	
+}
+#content #table1 td{
+	width: 200px;
+	height: 40px;
+	text-align: center;
+}
+#content .operation{
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+	
+}
+#content .operation .btn{
+	
+	width: 60px;
+	height: 25px;
+	float: right;
+	margin-right: 10px;
+}
