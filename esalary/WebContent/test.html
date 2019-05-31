@@ -1,0 +1,243 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQueryEasyUITest</title>
+        <!-- <link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+        <link rel="stylesheet" type="text/css" href="../../themes/color.css">
+        <link rel="stylesheet" type="text/css" href="../demo.css">
+        <script type="text/javascript" src="../../jquery.min.js"></script>
+        <script type="text/javascript" src="../../jquery.easyui.min.js"></script> -->
+        <link rel="stylesheet" type="text/css"
+	href="js/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="js/easyui/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="js/easyui/demo/demo.css">
+	<link rel="stylesheet" type="text/css" href="js/easyui/themes/color.css">
+
+	<script type="text/javascript" src="js/easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="js/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript"
+	src="js/easyui/local/easyui-lang-zh_CN.js"></script>
+    </head>
+    <body style="background: url('img/bg2.jpg'); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;"">
+    	
+        <h2>Style LinkButton</h2>
+        <p>This example shows how to style a linkbutton.</p>
+        <div style="margin:10px 0 40px 0;"></div>
+        <div style="margin:20px 0">
+            <a href="#" class="easyui-linkbutton c1" style="width:120px ;height:100px">Button1</a>
+            <a href="#" class="easyui-linkbutton c2" style="width:120px">Button2</a>
+            <a href="#" class="easyui-linkbutton c3" style="width:120px">Button3</a>
+            <a href="#" class="easyui-linkbutton c4" style="width:120px">Button4</a>
+        </div>
+        <div style="margin:20px 0">
+            <a href="#" class="easyui-linkbutton c5" style="width:120px">Button5</a>
+            <a href="#" class="easyui-linkbutton c6" style="width:120px">Button6</a>
+            <a href="#" class="easyui-linkbutton c7" style="width:120px">Button7</a>
+            <a href="#" class="easyui-linkbutton c8" style="width:120px">Button8</a>
+        </div>
+        <table class="easyui-datagrid" style="width:950px;height:auto;border:1px solid #ccc;">
+        <thead>
+            <tr>
+                <th data-options="field:'itemid',align:'left'">教职工编号</th>
+                <th data-options="field:'productid',align:'left'">教职工姓名</th>
+                <th data-options="field:'listprice',align:'left'">教职工性别</th>
+                <th data-options="field:'attr1',align:'left'">教职工工号</th>
+                <th data-options="field:'attr1',align:'left'">民族</th>
+                <th data-options="field:'attr1',align:'left'">教职工生日</th>
+                <th data-options="field:'attr1',align:'left'">部门</th>
+                <th data-options="field:'attr1',align:'left'">职位</th>
+                <th data-options="field:'attr1',align:'left'">教职工电话</th>
+                <th data-options="field:'attr1',align:'left'">邮箱</th>
+                <th data-options="field:'attr1',align:'left'">编辑日期</th>
+                <th data-options="field:'attr1',align:'left'">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <c:forEach items="${teacherBIs }" var="c1">
+				<tr>
+					<td>${c1.id }</td>
+					<td>${c1.username }</td>
+					<td>${c1.sex }</td>
+					<td>${c1.cardNumber }</td>
+					<td>${c1.nation }</td>
+					<td>${c1.birthday }</td>
+					<td>${c1.department }</td>
+					<td>${c1.positionName }</td>
+					<td>${c1.telephone }</td>
+					<td>${c1.email }</td>
+					<td>${c1.editTime }</td>
+					<td><a class="easyui-linkbutton" data-options="iconCls:'icon-remove'" href="deletegrxx1.do?id=${c1.id }"><font
+							color="red">&nbsp删除&nbsp&nbsp&nbsp</font></a></td>
+				</tr>
+			</c:forEach> -->
+            
+        </tbody>
+    </table>
+    <br>
+        <table style="width:700px;height:auto;border:1px solid #ccc;">
+        <thead>
+            <tr>
+                <th data-options="field:'itemid'">Item ID</th>
+                <th data-options="field:'productid'">Product</th>
+                <th data-options="field:'listprice',align:'right'">List Price</th>
+                <th data-options="field:'attr1'">Attribute</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>EST-1</td><td>FI-SW-01</td><td>36.50</td><td>Large</td>
+            </tr>
+            <tr>
+                <td>EST-10</td><td>K9-DL-01</td><td>18.50</td><td>Spotted Adult Female</td>
+            </tr>
+            <tr>
+                <td>EST-11</td><td>RP-SN-01</td><td>28.50</td><td>Venomless</td>
+            </tr>
+            <tr>
+                <td>EST-12</td><td>RP-SN-01</td><td>26.50</td><td>Rattleless</td>
+            </tr>
+            <tr>
+                <td>EST-115</td><td>RP-LI-02</td><td>35.50</td><td>Green Adult</td>
+            </tr>
+        </tbody>
+    </table>
+     <FONT face="隶书" color="#0096ff" size="6">欢迎您的来访</FONT>
+     <FONT style="FONT-WEIGHT: normal; FONT-SIZE: 40pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal" face=华文彩云 color=blue>舞</FONT>
+     欢迎来到音画学堂
+
+<DIV style="FONT-SIZE:30pt;filter:dropshadow(color=#999999,offX=5,offY=3,Positive=1);WIDTH:100%; COLOR:red;LINE-HEIGHT:150%;FONT-FAMILY:华文行楷"><B>欢迎来到音画学堂</B></DIV>
+欢迎您的来访
+访来的您迎欢
+<MARQUEE scrollAmount=3><FONT face=隶书 color=#0096ff size=6>欢迎您的来访</FONT></MARQUEE><MARQUEE scrollAmount=3 direction=right>
+
+<FONT face=隶书 color=#ff66ff size=6>访来的您迎欢</FONT></MARQUEE>
+
+祝您开心快乐 好运来
+<DIV style="FONT-SIZE:30pt;filter:shadow(color=black,direction=180);WIDTH:100%; COLOR:red;LINE-HEIGHT:150%;FONT-FAMILY:华文行楷"><B>祝您开心快乐好运来</B></DIV>
+ 欢迎光临
+<MARQUEE behavior=alternate direction=up height=200 scrollAmount=5><MARQUEE behavior=altrnate scrollAmount=2 width=460><FONT color=blue face=华文魏碑 size=6>欢迎光临</FONT></MARQUEE></MARQUE>
+美丽世界
+ 
+界世丽美
+<MARQUEE width=250 height=50><IMG src="http://www.dabaoku.com/gif/154/gif034.gif"><FONT face=隶书 color=#ff0000 size=7>美丽世界<IMG src="http://www.dabaoku.com/gif/154/gif034.gif"></FONT></MARQUEE> <MARQUEE direction=right width=250 height=50><IMG src="http://www.dabaoku.com/gif/154/gif033.gif"><FONT face=隶书 color=#ff0000 size=7>界世丽美<IMG src="http://www.dabaoku.com/gif/154/gif033.gif"></FONT></MARQUEE>
+园花福幸
+ 
+幸福花园
+ <MARQUEE direction=right width=250 height=90><IMG src="2.gif"> face=隶书 color=#ff0000 size=7>园花福幸<IMG src="2.gif"></FONT></MARQUEE></FONT>
+<MARQUEE width=250 height=90><IMG src="2.gif"><FONT face=隶书 color=#ff0000 size=7>幸福花园<IMG src="2.gif"></Font></MARQUEE>
+      谢谢您的观赏
+<MARQUEE direction=up height=70 scrollAmount=3 scrollDelay=150 width=400> <CENTER><FONT color=red face=黑体 size=6>谢谢您的观赏<BR></FONT></CENTER></MARQUEE>
+辽阔的大草原
+<DIV style="FONT-SIZE:30pt;filter:wave(add=0,lightstrength=50,strength=4,freq=2,phrase=30);WIDTH:100%; COLOR:#00ff00;LINE-HEIGHT:150%;FONT- FAMILY:华文行楷"><B>辽阔的大草原</B></DIV>
+蓝色的天空
+<DIV style="FONT-SIZE:40pt;filter:glow(color=#ffff00,strength=4);WIDTH:100%; COLOR:00bfff;LINE-HEIGHT:150%;FONT-FAMILY:华文行楷"><B>蓝色的天空</B></DIV>
+舞
+<DIV style="FILTER: shadow(color=#c299ff, strength=40); WIDTH: 480px"><FONT style="FONT-WEIGHT: normal; FONT-SIZE: 150pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal" face=华文彩云 color=#fff000>舞</FONT> <BR></DIV></DIV>
+ 轻舞_像蜻蜓点水般让人陶醉!
+     飞扬_像天鹅般高雅!
+<MARQUEE scrollAmount=2 scrollDelay=5 behavior=alternate width=600 bgColor=#aaeeaa height=90><FONT face=华文新魏 color=#ff0000 size=5>&nbsp;轻舞_像蜻蜓点水般让人陶醉!<BR>&nbsp;&nbsp;&nbsp;&nbsp; 飞扬_像天鹅般高雅! </FONT></MARQUEE>
+
+
+祝福送给你 温馨带回家!
+<DIV align=center> <DIV style="FILTER: glow(color=#c299ff, strength=60); WIDTH: 600px"><FONT face=隶书 color=#8a2be2 size=5><B><BR>祝福送给你温馨带回家!</FONT></B></DIV></DIV>
+快乐度过每一天
+<DIV align=center> <DIV style="FILTER: shadow(color=#FF0000, strength=60); WIDTH: 480px"><FONT style="FONT-WEIGHT: normal; FONT -SIZE: 40pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal" face=华文彩云 color=#ffffff>快乐度过每一天 </FONT></DIV></DIV> <DIV align=center></DIV> <DIV align=left> </DIV>
+轻
+ 
+舞
+ 
+飞
+ 
+扬
+ 
+跳
+ 
+呀
+ 
+跳
+<MARQUEE direction=up behavior=alternate width=60 height=120><FONT color=#8a2be2 size=7>轻 </FONT></MARQUEE><FONT color=yellow size=7> <MARQUEE direction=up behavior=alternate width=60 height=80>舞 </MARQUEE><FONT color=brown size=7> <MARQUEE direction=up behavior=alternate width=60 height=120>飞</MARQUEE><FONT color=green size=7> <MARQUEE direction=up behavior=alternate width=60 height=80>扬</MARQUEE><FONT color=orange size=7> <MARQUEE direction=up behavior=alternate width=60 height=120>跳</MARQUEE><FONT color=yellow size=7> <MARQUEE direction=up behavior=alternate width=60 height=80>呀</MARQUEE><FONT color=orange size=7> <MARQUEE direction=up behavior=alternate width=60 height=120>跳 </MARQUEE></FONT></B></MARQUEE></FONT></FONT></FONT></FONT></FONT></FONT></FONT>
+蝴
+ 
+蝶
+ 
+翩
+ 
+翩
+ 
+飞
+ 
+呀
+ 
+飞
+<MARQUEE scrollAmount=8 direction=right behavior=alternate><B><FONT color=#7700bb size=5><FONT color=lime> <MARQUEE direction=up behavior=alternate width=40 height=200 align="middle">蝴</MARQUEE><FONT color=red> <MARQUEE direction=up behavior=alternate width=40 height=150>蝶</MARQUEE><FONT color=orange> <MARQUEE direction=up behavior=alternate width=40 height=200>翩</MARQUEE><FONT color=fuchsia> <MARQUEE direction=up behavior=alternate width=40 height=150>翩</MARQUEE><FONT color=olive> <MARQUEE direction=up behavior=alternate width=40 height=200>飞 </MARQUEE><FONT color=green> <MARQUEE direction=up behavior=alternate width=40 height=150>呀</MARQUEE><FONT color=red> <MARQUEE direction=up behavior=alternate width=40 height=200>飞</MARQUEE><FONT color=orange></FONT></B></MARQUEE>
+春
+ 
+夏
+ 
+秋
+ 
+冬
+<MARQUEE scrollAmount=2 width=60 height=67 scrolldely="10" align="center"><B><FONT style="FONT-WEIGHT: normal; FONT-SIZE: 20pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal" face=华文彩云 color=#ff0000><B>春 </FONT></B></B>
+
+</MARQUEE><MARQUEE scrollAmount=2 width=60 height=67 scrolldely="10"align="center">
+
+<B><FONT style="FONT-WEIGHT: normal; FONT-SIZE: 20pt; LINE-HEIGHT: normal; FONT-VARIANT: normal" face=华文彩云 color=#ff0000><B>夏</FONT></B></B></MARQUEE>
+
+<MARQUEE scrollAmount=2 width=60 height=67 scrolldely="10" align="center">
+
+<B><FONT style="FONT-WEIGHT: normal; FONT-SIZE: 20pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal" face=华文彩云 color=#ff0000><B>秋</FONT></B></B>
+
+</MARQUEE><MARQUEE scrollAmount=2 width=60 height=67 scrolldely="10" align="center">
+
+<B><FONT style="FONT-WEIGHT: normal; FONT-SIZE: 20pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal" face=华文彩云 color=#ff0000><B>冬</FONT></B></B></MARQUEE></FONT><CENTER></CENTER>
+
+
+记得常来看看
+
+<TABLE align="center" border="0" cellpadding="0" cellspacing="0" background =http://sc.chinaz.com/Files/pic/webPic/beijing%5Cbj2%5Chh306.gif><TR><TD style="FILTER: chroma(color=#336699"><TABLE align=center bgcolor=#FCF3F4><TR><TD align=middle><FONT style="FONT-SIZE: 30pt" face=华文新魏 color=#336699><b>记得常来看看 </b></FONT></TD></TR></TABLE></TD></TR></TABLE>
+        岁岁平安日年年如意春
+
+        岁岁平安日年年如意春
+
+<CENTER> <MARQUEE scrollAmount=2 direction=down height=60> <CENTER><FONT face=华文彩云 color=#ff00ff size=6><B>岁岁平安日年年如意春</FONT></CENTER></B></MARQUEE> <CENTER> <MARQUEE scrollAmount=2 direction=up height=60> <CENTER><FONT face=华文彩云 color=#ff00ff size=6><B>岁岁平安日年年如意春 </FONT></CENTER></B></MARQUEE></CENTER> </CENTER>
+丰富的昨天
+美丽的今天
+希望的明天
+编织成你更好的每一天
+<marquee behavior=scroll><FONT style="FONT-SIZE: 20pt; FILTER: shadow(color=#AF0530); WIDTH: 100%; COLOR: #00ffff; LINE-HEIGHT: 150%; FONT-FAMILY: 隶书"><B>丰富的昨天<BR>美丽的今天<BR>希望的明天 <BR>编织成你更美好的每一天 </B></FONT></DIV></marquee>
+ 欢迎您的到来
+
+ <MARQUEE scrollAmount=3 direction=down behavior=alternate height=350><MARQUEE
+
+scrollAmount=3 behavior=alternate width=600><IMG src="1.gif"><FONT color=red
+
+size=6><B>欢迎您的到来</B><IMG src="1.gif"></FONT></MARQUEE></MARQUEE>
+<input class="easyui-textbox" data-options="iconCls:'icon-search'" style="width:300px"> 
+
+    <div style="margin:20px 0;"></div>
+    <div class="easyui-panel" title="New Topic" style="width:100%;max-width:400px;padding:30px 60px;">
+        <form id="ff" method="post">
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" name="name" style="width:100%" data-options="label:'Name:',required:true">
+            </div>
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" name="email" style="width:100%" data-options="label:'Email:',required:true,validType:'email'">
+            </div>
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" name="subject" style="width:100%" data-options="label:'Subject:',required:true">
+            </div>
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" name="message" style="width:100%;height:60px" data-options="label:'Message:',multiline:true">
+            </div>
+            <div style="margin-bottom:20px">
+                <select class="easyui-combobox" name="language" label="Language" style="width:100%"><option value="ar">Arabic</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="zh-cht">Chinese Traditional</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="en" selected="selected">English</option><option value="et">Estonian</option><option value="fi">Finnish</option><option value="fr">French</option><option value="de">German</option><option value="el">Greek</option><option value="ht">Haitian Creole</option><option value="he">Hebrew</option><option value="hi">Hindi</option><option value="mww">Hmong Daw</option><option value="hu">Hungarian</option><option value="id">Indonesian</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="ko">Korean</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="no">Norwegian</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="es">Spanish</option><option value="sv">Swedish</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="vi">Vietnamese</option></select>
+            </div>
+        </form>
+        <div style="text-align:center;padding:5px 0">
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()" style="width:80px">Submit</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()" style="width:80px">Clear</a>
+        </div>
+    </div>
+    </body>
+    </html>

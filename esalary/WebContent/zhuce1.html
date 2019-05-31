@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'qdb1.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+  </head>
+  
+ 
+  <%
+  String username=request.getParameter("username");	
+  String password=request.getParameter("password");	
+  
+  
+
+  
+  
+  
+String driverName="com.mysql.jdbc.Driver";
+String userName="root";
+String userPasswd="root";
+String dbName="xuexiaogongzi";
+String tableName="employee";
+String url="jdbc:mysql://localhost:3306/xuexiaogongzi?useUincode=true&characterEncoding=gb2312";
+Connection con=null;
+Statement s=null;
+try{
+	Class.forName(driverName);
+}catch(ClassNotFoundException e)
+{ System.out.print("Error loading Driver,不能加载程序驱动！");  }
+try{
+	con=DriverManager.getConnection(url,userName,userPasswd);	
+}
+catch(SQLException er)
+{
+	System.out.print("Error getConnection, 不能链接数据库！");	
+}
+ 
+
+  
+	String sql ="insert into employee value (?,?)";
+	PreparedStatement ps=con.prepareStatement(sql);
+	ps.setString(1, username);
+	ps.setString(2, password);
+	ps.execute();
+	
+	response.sendRedirect("employee.jsp");
+
+   %> 
+</html>

@@ -1,0 +1,72 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'checkhr.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+  </head>
+  
+  <title>登录中…………</title>
+	<body>
+		<%
+			String logid = request.getParameter("username");
+			String logpasswd = request.getParameter("password");
+			session.setAttribute("username", logid);
+			String driverName = "com.mysql.jdbc.Driver";
+			String userName = "root";
+			String userPasswd = "root";
+			String dbName = "xuexiaogongzi";
+			String tableName = "hr";
+			String url = "jdbc:mysql://localhost:3306/" + dbName;
+			Connection con = null;
+			Statement s = null;
+			ResultSet rs = null;
+			try {
+				Class.forName(driverName);
+			} catch (ClassNotFoundException e) {
+				System.out.print("Error loading Driver,不能加载程序驱动！");
+			}
+			try {
+				con = DriverManager.getConnection(url, userName, userPasswd);
+			} catch (SQLException er) {
+				System.out.print("Error getConnection, 不能链接数据库！");
+			}
+			try {
+				s = con.createStatement();
+				String sql = "SELECT * FROM hr where username='"+logid+"'";
+				System.out.println(sql);
+				rs = s.executeQuery(sql);
+				if (rs.next()) {
+					if (rs.getString("username").equals(logid)
+							&& rs.getString("password").equals(logpasswd)) {
+						response.sendRedirect("hr1.jsp");
+					} else {
+						response.sendRedirect("falsehr.jsp");
+					}
+				}
+				rs.close();
+				s.close();
+				con.close();
+			} catch (SQLException er)
+
+			{
+				er.printStackTrace();
+				System.err.println("Error executeQuery, 不能执行查询！");
+			}
+		%>
+	</body>
+</html>
+
+
+
